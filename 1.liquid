@@ -483,6 +483,9 @@
                 Free
               {% endif %}
             </p>
+            {% if line_title contains 'Extra Virgin Olive Oil' %}
+              <p style="margin: 0; color: #777;">GST-free item</p>
+            {% endif %}
           </td>
         {% if line.nested_line_parent? %}
           {% for child_line in line.nested_lines %}
@@ -706,6 +709,9 @@
                       {{ 'notifications.views.mailers.notifications.discount_free' | t }}
                     {% endif %}
                   </p>
+                  {% if line_item_group.title contains 'Extra Virgin Olive Oil' %}
+                    <p style="margin: 0; color: #777;">GST-free item</p>
+                  {% endif %}
                 </td>
             </tr>
 
@@ -784,6 +790,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -898,6 +907,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -1144,6 +1156,9 @@
                 Free
               {% endif %}
             </p>
+            {% if line_title contains 'Extra Virgin Olive Oil' %}
+              <p style="margin: 0; color: #777;">GST-free item</p>
+            {% endif %}
           </td>
         {% if line.nested_line_parent? %}
           {% for child_line in line.nested_lines %}
@@ -1365,6 +1380,9 @@
                       {{ 'notifications.views.mailers.notifications.discount_free' | t }}
                     {% endif %}
                   </p>
+                  {% if line_item_group.title contains 'Extra Virgin Olive Oil' %}
+                    <p style="margin: 0; color: #777;">GST-free item</p>
+                  {% endif %}
                 </td>
             </tr>
 
@@ -1443,6 +1461,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -1557,6 +1578,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -1703,6 +1727,9 @@
                       {{ 'notifications.views.mailers.notifications.discount_free' | t }}
                     {% endif %}
                   </p>
+                  {% if line_item_group.title contains 'Extra Virgin Olive Oil' %}
+                    <p style="margin: 0; color: #777;">GST-free item</p>
+                  {% endif %}
                 </td>
             </tr>
 
@@ -1781,6 +1808,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -1895,6 +1925,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -2441,6 +2474,9 @@
                 Free
               {% endif %}
             </p>
+            {% if line_title contains 'Extra Virgin Olive Oil' %}
+              <p style="margin: 0; color: #777;">GST-free item</p>
+            {% endif %}
           </td>
         {% if line.nested_line_parent? %}
           {% for child_line in line.nested_lines %}
@@ -2660,6 +2696,9 @@
                       {{ 'notifications.views.mailers.notifications.discount_free' | t }}
                     {% endif %}
                   </p>
+                  {% if line_item_group.title contains 'Extra Virgin Olive Oil' %}
+                    <p style="margin: 0; color: #777;">GST-free item</p>
+                  {% endif %}
                 </td>
             </tr>
 
@@ -2738,6 +2777,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -2852,6 +2894,9 @@
             Free
         {% endif %}
         </p>
+        {% if component_title contains 'Extra Virgin Olive Oil' %}
+          <p style="margin: 0; color: #777;">GST-free item</p>
+        {% endif %}
     </td>
     {% endif %}
 </tr>
@@ -3553,7 +3598,13 @@
           <tr>
             <td>
               
-              <p class="disclaimer__subtext">If you have any questions, reply to this email or contact us at <a href="mailto:{{ shop.email }}">{{ shop.email }}</a></p>
+              <p class="disclaimer__subtext" style="text-align: center;">
+                <b>Thank You</b>
+              </p>
+              <p class="disclaimer__subtext" style="text-align: center;">
+                Thank you for choosing Olive Blue Extra Virgin Olive Oil.<br>
+                If you have any questions, reply to this email or contact us at <a href="mailto:info@oliveblue.com.au">info@oliveblue.com.au</a>.
+              </p>
             </td>
           </tr>
         </table>
